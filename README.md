@@ -9,9 +9,9 @@
 ## 目录
 
 - [安装](#安装)
-- [Vue实例](#md/Vue实例.md)
-- [模板语法](#md/模板语法.md)
-- [计算属性](#md/计算属性.md)
+- [Vue实例](md/Vue实例.md)
+- [模板语法](md/模板语法.md)
+- [计算属性](md/计算属性.md)
 - [参考文档](#参考文档)
 
 ## [安装](https://cn.vuejs.org/v2/guide/installation.html)
