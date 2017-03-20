@@ -16,6 +16,7 @@
 - [条件渲染](md/条件渲染.md)
 - [列表渲染](md/列表渲染.md)
 - [事件处理器](md/事件处理器.md)
+- [表单控件绑定](md/表单控件绑定.md)
 - [参考文档](#参考文档)
 
 ## [安装](https://cn.vuejs.org/v2/guide/installation.html)
