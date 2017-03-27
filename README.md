@@ -18,6 +18,7 @@
 - [事件处理器](md/事件处理器.md)
 - [表单控件绑定](md/表单控件绑定.md)
 - [组件](md/组件.md)
+- [响应式系统](md/响应式系统.md)
 - [参考文档](#参考文档)
 
 ## [安装](https://cn.vuejs.org/v2/guide/installation.html)
@@ -115,5 +116,6 @@ $ vue init webpack helloworld
 
 ## 参考文档
 
-[Vue.js](https://cn.vuejs.org/v2/guide/installation.html)
-[Github](https://github.com/vuejs/vue)
+- [Vue.js](https://cn.vuejs.org/v2/guide/installation.html)
+- [Github](https://github.com/vuejs/vue)
+- [Vue.js学习](http://blog.csdn.net/i10630226/article/details/51854975)
