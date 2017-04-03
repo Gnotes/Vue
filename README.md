@@ -122,4 +122,5 @@ $ vue init webpack helloworld
 
 ## 视频
 
-- [Laravist](https://www.laravist.com/)
+- [Laravist](https://www.laravist.com/) 付费  
+- [vuejs-learn](https://github.com/bhnddowinf/vuejs-learn) 免费  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js 基本操作</title>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- some bootstrap css -->
+
+<!-- panel -->
+<div class="panel panel-primary">
+  <div class="panel-heading">Hello Vue.js</div>
+  <div class="panel-body">
+    <!-- My app selector -->
+    <div id="app">
+      <!-- v-html -->
+      <div class="alert alert-success" v-html="htmlText"></div>
+      <!-- v-if -->
+      <p v-if="seen">
+        <span class="label label-primary">{{SeenMessage}}</span>
+      </p>
+      <p class="alert alert-info">
+        {{seen ? "I'm true,so you see me" : "I'm false and leaving"}}
+      </p>
+      <button class="btn btn-success" @click="toggle">
+       <span class="glyphicon glyphicon-sunglasses"> {{SeenBtnText}}</span>
+      </button>
+
+      <p></p>
+      
+      <!-- filter -->
+      <div class="alert alert-info">
+        <p>This is a filter case ,try to input something below!</p>
+        {{name | upperCalse}}
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">
+          <span class="glyphicon glyphicon-user"></span>
+        </span>
+        <input type="text" class="form-control" placeholder="Input your name" v-model="name">
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">&copy; xing.he</div>
+</div>
+</body>
+<script type="text/javascript">
+  var vm = new Vue({
+    el:'#app',
+    data:{
+      htmlText:'<h3>This text converted from “HTML”</h3>',
+      SeenMessage:'Now,you see me !',
+      seen:true,
+      SeenBtnText:"Don't hit me !",
+      name:''
+    },
+    methods:{
+      toggle(){
+        this.seen = !this.seen;
+        this.SeenBtnText = this.seen ? "Don't hit me !" : 'I hate you !' ;
+      }
+    },
+    filters:{
+      upperCalse(value){
+        return value ? value.trim().toUpperCase() : ''
+      }
+    }
+  })
+
+</script>
+</html>
