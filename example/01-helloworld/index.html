@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue hello world</title>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- some bootstrap css -->
+
+<!-- panel -->
+<div class="panel panel-primary">
+  <div class="panel-heading">Hello Vue.js</div>
+  <div class="panel-body">
+    <!-- My app selector -->
+    <div id="app">
+      <!-- My message -->
+      <div class="alert alert-success" role="alert">
+        {{message}}
+      </div>
+      <!-- My input -->
+      <input type="text" class="form-control" placeholder="Username" v-model="message">
+      <!-- My todos     -->
+      <h3>My Todos</h3>
+      <ul class="list-group">
+        <!-- for (todo,index) in todos -->
+        <li class="list-group-item" v-for="(todo,index) in todos">
+          {{todo.title}}
+
+          <!-- add remove button -->
+          <!-- @click is the alias of v-on:click  -->
+          <!-- call removeTodo with parameter index -->
+          <button class="btn btn-info btn-xs pull-right" @click.prevent="removeTodo(index)">
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- bind submit ,call function addTodo without parameters -->
+      <form v-on:submit.prevent="addTodo">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Input a new todo" v-model="newTodo">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success">Add Todo</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="panel-footer">&copy; xing.he</div>
+</div>
+</body>
+<script type="text/javascript">
+  
+  var vm = new Vue({
+    el:'#app',
+    data:{
+      message:'Hello Vue ,my first demo',
+      todos:[
+        {title:'default-initial-item-1'},
+        {title:'default-initial-item-2'},
+        {title:'default-initial-item-3'}
+      ],
+      newTodo:''
+    },
+    methods:{
+      addTodo(){
+        this.todos.push({title:this.newTodo.trim()})
+        this.newTodo = ''
+      },
+      removeTodo(index){
+        this.todos.splice(index,1)
+      }
+    }
+  })
+</script>
+</html>

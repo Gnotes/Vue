@@ -119,3 +119,7 @@ $ vue init webpack helloworld
 - [Vue.js](https://cn.vuejs.org/v2/guide/installation.html)
 - [Github](https://github.com/vuejs/vue)
 - [Vue.js学习](http://blog.csdn.net/i10630226/article/details/51854975)
+
+## 视频
+
+- [Laravist](https://www.laravist.com/)
