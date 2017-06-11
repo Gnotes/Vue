@@ -71,6 +71,6 @@ vm.$watch('a', function (newVal, oldVal) {
 
 ## 生命周期
 
-每个Vue对象从创建到销毁都有一系列的操作，而这些过程就是Vue实例的生命周期，主要分为 `beforeCreate` `create`  `beforeMount` `mounted` `beforeUpdate` `updated` `beforeDestroyed` `destroyed`
+每个Vue对象从创建到销毁都有一系列的操作，而这些过程就是Vue实例的生命周期，主要分为 `beforeCreate` `created`  `beforeMount` `mounted` `beforeUpdate` `updated` `beforeDestroyed` `destroyed`
 
 <img src="../image/lifecycle.png" width="600">
