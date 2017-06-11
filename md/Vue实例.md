@@ -69,8 +69,8 @@ vm.$watch('a', function (newVal, oldVal) {
 - `$el` : 实例对象挂载（渲染）的dom对象
 - `$watch` : 这个方法会监听`data`属性下面的值`改变`，有两个参数，第一个参数是要监听的`key`, 第二个参数是一个回调函数callback(oldVlaue,newValue)，**需要注意** 的是，**es6 的`箭头函数`会自动绑定`this`,这样函数内this就不是我们创建的Vue实例了，因此这里不要使用箭头函数**
 
-## 声明周期
+## 生命周期
 
-每个Vue对象从创建到销毁都有一系列的操作，而这些过程就是Vue实例的声明周期，主要分为 `create` `beforeCreate` `created` `counted` `beforeUpdate` `updated` `beforeDestroyed` `destroyed`
+每个Vue对象从创建到销毁都有一系列的操作，而这些过程就是Vue实例的生命周期，主要分为 `beforeCreate` `create`  `beforeMount` `mounted` `beforeUpdate` `updated` `beforeDestroyed` `destroyed`
 
 <img src="../image/lifecycle.png" width="600">
