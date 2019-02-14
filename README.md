@@ -20,6 +20,7 @@
 - [组件](md/组件.md)
 - [响应式系统](md/响应式系统.md)
 - [单文件模板](md/单文件模板.md)
+- [属性](md/属性.md)
 - [参考文档](#参考文档)
 
 ## [安装](https://cn.vuejs.org/v2/guide/installation.html)
