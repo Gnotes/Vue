@@ -21,6 +21,7 @@
 - [响应式系统](md/响应式系统.md)
 - [单文件模板](md/单文件模板.md)
 - [属性](md/属性.md)
+- [自定义事件](md/自定义事件.md)
 - [参考文档](#参考文档)
 
 ## [安装](https://cn.vuejs.org/v2/guide/installation.html)
