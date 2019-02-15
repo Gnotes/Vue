@@ -26,6 +26,7 @@
 - [处理边界情况](md/处理边界情况.md)
 - [过渡和动画](md/过渡和动画.md)
 - [混入](md/混入.md)
+- [自定义指令](md/自定义指令.md)
 - [参考文档](#参考文档)
 
 ## [安装](https://cn.vuejs.org/v2/guide/installation.html)
