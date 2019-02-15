@@ -27,6 +27,7 @@
 - [过渡和动画](md/过渡和动画.md)
 - [混入](md/混入.md)
 - [自定义指令](md/自定义指令.md)
+- [过滤器](md/过滤器.md)
 - [参考文档](#参考文档)
 
 ## [安装](https://cn.vuejs.org/v2/guide/installation.html)
